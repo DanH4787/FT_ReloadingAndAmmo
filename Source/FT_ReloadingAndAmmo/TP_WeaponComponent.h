@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "AmmoType.h"
 #include "TP_WeaponComponent.generated.h"
 
 class AFT_ReloadingAndAmmoCharacter;
@@ -37,6 +38,16 @@ public:
 	/** Fire Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	class UInputAction* FireAction;
+
+	/** How much ammo have we got */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Ammo", meta = (AllowPrivateAccess = "true"))
+	int AmmoInClip;
+	/** How damage can we do */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Ammo", meta = (AllowPrivateAccess = "true"))
+	int Damage;
+	/** Store our ammo type */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Ammo", meta = (AllowPrivateAccess = "true"))
+	UAmmoType* AmmoType;
 
 	/** Sets default values for this component's properties */
 	UTP_WeaponComponent();

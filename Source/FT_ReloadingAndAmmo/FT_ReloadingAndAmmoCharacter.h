@@ -36,7 +36,7 @@ class AFT_ReloadingAndAmmoCharacter : public ACharacter
 	/** Move Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* MoveAction;
-	
+
 public:
 	AFT_ReloadingAndAmmoCharacter();
 
