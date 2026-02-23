@@ -70,6 +70,9 @@ void AFT_ReloadingAndAmmoCharacter::SetupPlayerInputComponent(UInputComponent* P
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AFT_ReloadingAndAmmoCharacter::Look);
+		
+		
+
 	}
 	else
 	{
