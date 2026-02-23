@@ -115,6 +115,9 @@ bool UTP_WeaponComponent::AttachWeapon(AFT_ReloadingAndAmmoCharacter* TargetChar
 		{
 			// Fire
 			EnhancedInputComponent->BindAction(FireAction, ETriggerEvent::Triggered, this, &UTP_WeaponComponent::Fire);
+			// this is reload
+			EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, this, &UTP_WeaponComponent::Reload);
+
 		}
 	}
 

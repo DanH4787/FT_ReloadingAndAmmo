@@ -22,6 +22,9 @@ class FT_RELOADINGANDAMMO_API UAmmoType : public UPrimaryDataAsset
         int AmmoCount;
 
         UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ammo")
+        int AmmoReserveCount;
+
+        UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ammo")
         int Damage;
 
 };
